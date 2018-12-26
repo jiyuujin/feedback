@@ -64,10 +64,10 @@
         </div>
         <div class="description">
           <a
-            href="https://webneko.info/posts/paginate-great-quantity-data-in-laravel-on-advent-calendar-2018"
+            href="https://webneko.info/posts/pagination-on-tables-and-validator-on-advent-calendar-2018"
             target="_blank"
           >
-            LARAVELで〆てみる、およそ10万件のデータをページ管理する
+            LARAVELで〆、バリデーションとデータのページ管理
           </a>
         </div>
       </div>

@@ -3,15 +3,10 @@
     <v-space
       text="該当シートの共有にチェックを付けること"
     >
-      <div class="specify">
-        <p>
-          google/apiclient
-        </p>
-        <p>
-          asimlqt/php-google-spreadsheet-client
-        </p>
-      </div>
       <ul>
+        <li>
+          google/apiclient + asimlqt/php-google-spreadsheet-clientを使う。
+        </li>
         <li>
           基本はapp/controllers/SpreadsheetController.phpでAPIを呼び出すこと。
         </li>

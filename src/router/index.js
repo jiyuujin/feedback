@@ -205,9 +205,9 @@ router.beforeEach((to, from, next) => {
 })
 
 window.addEventListener('click', e => {
-  // console.log(e.offsetX + '/' + window.screen.height + ' : ', e.offsetY + '/' + window.screen.width)
+  // console.log(e.offsetX + '/' + window.screen.width + ' : ', e.offsetY + '/' + window.screen.height)
 
-  if (e.offsetX > (window.screen.height / 2)) {
+  if (e.offsetX > (window.screen.width / 2)) {
     store.dispatch('onNext', { pages })
   } else {
     store.dispatch('onLast')

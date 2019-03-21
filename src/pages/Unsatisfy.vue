@@ -1,16 +1,14 @@
 <template>
-  <v-base>
-    <v-space
-      text="不満な点もありましたが。。"
-    >
-      <div class="content">
-        <img
-          src="../static/evan_keynote.png"
-          alt="evan_session"
-        >
-      </div>
-    </v-space>
-  </v-base>
+  <v-space
+    title="不満な点もありましたが。。"
+  >
+    <div class="description">
+      <img
+        src="../static/evan_keynote.png"
+        alt="evan_session"
+      >
+    </div>
+  </v-space>
 </template>
 
 <script>
@@ -19,6 +17,6 @@ export default {}
 
 <style scoped>
 img {
-  width: 75%;
+  width: 60%;
 }
 </style>

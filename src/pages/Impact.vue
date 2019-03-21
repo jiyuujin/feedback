@@ -1,11 +1,9 @@
 <template>
-  <v-base>
-    <v-space>
-      <div class="content">
-        😇
-      </div>
-    </v-space>
-  </v-base>
+  <v-space>
+    <div class="description">
+      😇
+    </div>
+  </v-space>
 </template>
 
 <script>

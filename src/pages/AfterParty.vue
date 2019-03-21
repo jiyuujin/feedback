@@ -1,16 +1,14 @@
 <template>
-  <v-base>
-    <v-space
-      text="お楽しみ！アフターパーティー"
-    >
-      <div class="content">
-        <img
-          src="../static/after_party.png"
-          alt="after_party"
-        >
-      </div>
-    </v-space>
-  </v-base>
+  <v-space
+    title="お楽しみ！アフターパーティー"
+  >
+    <div class="description">
+      <img
+        src="../static/after_party.png"
+        alt="after_party"
+      >
+    </div>
+  </v-space>
 </template>
 
 <script>
@@ -19,6 +17,6 @@ export default {}
 
 <style scoped>
 img {
-  width: 75%;
+  width: 60%;
 }
 </style>

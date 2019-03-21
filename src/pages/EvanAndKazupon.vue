@@ -1,16 +1,14 @@
 <template>
-  <v-base>
-    <v-space
-      text="Mr. EVAN と Mr. KAZUPON"
-    >
-      <div class="content">
-        <img
-          src="../static/kazupon_kanpai.png"
-          alt="kazupon_kanpai"
-        >
-      </div>
-    </v-space>
-  </v-base>
+  <v-space
+    title="Mr. EVAN と Mr. KAZUPON"
+  >
+    <div class="description">
+      <img
+        src="../static/kazupon_kanpai.png"
+        alt="kazupon_kanpai"
+      >
+    </div>
+  </v-space>
 </template>
 
 <script>
@@ -19,6 +17,6 @@ export default {}
 
 <style scoped>
 img {
-  width: 75%;
+  width: 60%;
 }
 </style>

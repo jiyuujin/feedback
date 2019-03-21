@@ -1,14 +1,12 @@
 <template>
-  <v-base>
-    <v-space>
-      <div class="content">
-        <img
-          src="../static/line_quiz_4.png"
-          alt="line_quiz_4"
-        >
-      </div>
-    </v-space>
-  </v-base>
+  <v-space>
+    <div class="description">
+      <img
+        src="../static/line_quiz_4.png"
+        alt="line_quiz_4"
+      >
+    </div>
+  </v-space>
 </template>
 
 <script>

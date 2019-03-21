@@ -1,30 +1,28 @@
 <template>
-  <v-base>
-    <v-space
-      text="v-kansai Vue.js/Nuxt Meetup #1"
-    >
-      <div class="content">
-        <h2>
-          Vue Fes Japan 2018 Feedback
-        </h2>
-        <p>
-          PONOS Inc. Nyanko Studio / jiyuujin
-        </p>
-        <a
-          href="https://github.com/jiyuujin"
-          target="_blank"
-        >
-          Github
-        </a>
-        <a
-          href="https://twitter.com/jiyuujinlab"
-          target="_blank"
-        >
-          Twitter
-        </a>
-      </div>
-    </v-space>
-  </v-base>
+  <v-space
+    title="v-kansai Vue.js/Nuxt Meetup #1"
+  >
+    <div class="description">
+      <h2>
+        Vue Fes Japan 2018 Feedback
+      </h2>
+      <p>
+        PONOS Inc. Nyanko Studio / jiyuujin
+      </p>
+      <a
+        href="https://github.com/jiyuujin"
+        target="_blank"
+      >
+        Github
+      </a>
+      <a
+        href="https://twitter.com/jiyuujinlab"
+        target="_blank"
+      >
+        Twitter
+      </a>
+    </div>
+  </v-space>
 </template>
 
 <script>

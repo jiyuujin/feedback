@@ -1,23 +1,20 @@
 <template>
-  <div>
-    <h1
-      v-if="text !== ''"
-      :style="addStyle !== '' ? addStyle : ''"
-    >
-      {{ text }}
-    </h1>
-    <slot />
+  <div class="top">
+    <div class="content">
+      <div class="title">
+        {{ title }}
+      </div>
+      <div>
+        <slot />
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
   props: {
-    text: {
-      type: String,
-      default: ''
-    },
-    addStyle: {
+    title: {
       type: String,
       default: ''
     }
@@ -26,14 +23,5 @@ export default {
 </script>
 
 <style scoped>
-h1, h2 {
-  text-align: center;
-}
 
-p {
-  margin-top: 1.6em;
-  font-size: 1.2em;
-  line-height: 1.6em;
-  text-align: center;
-}
 </style>

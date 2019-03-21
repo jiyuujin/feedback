@@ -3,17 +3,11 @@
     <transition name="fade">
       <router-view />
     </transition>
-    <Button />
   </div>
 </template>
 
 <script>
-import Button from './components/Button.vue'
-export default {
-  components: {
-    Button
-  }
-}
+export default {}
 </script>
 
 <style scoped>

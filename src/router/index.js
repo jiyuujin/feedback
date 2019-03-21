@@ -6,18 +6,12 @@ import store from '../store'
 import Landing from '../pages/Landing.vue'
 import Profile from '../pages/Profile.vue'
 import Skill from '../pages/Skill.vue'
-import SkillPlusAlpha from '../pages/SkillPlusAlpha.vue'
 import Feedback from '../pages/Feedback.vue'
-import NuxtArchitecture from '../pages/NuxtArchitecture.vue'
-import GoogleOauth2 from '../pages/GoogleOauth2.vue'
-import PersonalConnection from '../pages/PersonalConnection.vue'
+import Personal from '../pages/Personal.vue'
 import Attend from '../pages/Attend.vue'
 import Unsatisfy from '../pages/Unsatisfy.vue'
 import Impact from '../pages/Impact.vue'
-import Video from '../pages/Video.vue'
 import EvanKeynote from '../pages/EvanKeynote.vue'
-import MainSessions from '../pages/MainSessions.vue'
-import Works from '../pages/Works.vue'
 import LineQuizMain from '../pages/LineQuizMain.vue'
 import LineQuizLottery from '../pages/LineQuizLottery.vue'
 import LineQuiz1 from '../pages/LineQuiz1.vue'
@@ -31,7 +25,6 @@ import EvanAndKazupon from '../pages/EvanAndKazupon.vue'
 import AdventCalendar from '../pages/AdventCalendar.vue'
 import VueSlide from '../pages/VueSlide.vue'
 import NextMeetup from '../pages/NextMeetup.vue'
-import Recruitment from '../pages/Recruitment.vue'
 import TheEnd from '../pages/TheEnd.vue'
 
 Vue.use(VueRouter)
@@ -53,29 +46,14 @@ const routes = [
     component: Skill
   },
   {
-    path: '/skill_plus_alpha',
-    name: 'SkillPlusAlpha',
-    component: SkillPlusAlpha
-  },
-  {
     path: '/feedback',
     name: 'Feedback',
     component: Feedback
   },
   {
-    path: '/nuxt_architecture',
-    name: 'NuxtArchitecture',
-    component: NuxtArchitecture
-  },
-  {
-    path: '/google_oauth2',
-    name: 'GoogleOauth2',
-    component: GoogleOauth2
-  },
-  {
-    path: '/personal_connection',
-    name: 'PersonalConnection',
-    component: PersonalConnection
+    path: '/personal',
+    name: 'Personal',
+    component: Personal
   },
   {
     path: '/attend',
@@ -93,24 +71,9 @@ const routes = [
     component: Impact
   },
   {
-    path: '/video',
-    name: 'Video',
-    component: Video
-  },
-  {
     path: '/evan_keynote',
     name: 'EvanKeynote',
     component: EvanKeynote
-  },
-  {
-    path: '/main_sessions',
-    name: 'MainSessions',
-    component: MainSessions
-  },
-  {
-    path: '/works',
-    name: 'Works',
-    component: Works
   },
   {
     path: '/line_quiz_main',
@@ -176,11 +139,6 @@ const routes = [
     path: '/next_meetup',
     name: 'NextMeetup',
     component: NextMeetup
-  },
-  {
-    path: '/recruitment',
-    name: 'Recruitment',
-    component: Recruitment
   },
   {
     path: '/the_end',

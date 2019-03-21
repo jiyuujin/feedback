@@ -1,27 +1,21 @@
 <template>
-  <v-base>
-    <v-space
-      text="ちなみに今回Vueを使ってスライドを作成しました"
-    >
-      <div class="content">
-        <p>
-          <a
-            href="https://github.com/jiyuujin/vue-presentation-starter"
-            target="_blank"
-          >
-            jiyuujin/vue-presentation-starter
-          </a>
-        </p>
-        <p>
-          技術スタックはWebpack4 + Vue + Vue-Router + Vuex
-        </p>
-        <v-code
-          :data="code"
-          :dark="dark"
-        />
-      </div>
-    </v-space>
-  </v-base>
+  <v-space
+    title="今回 Vue を使ってスライドを作成"
+  >
+    <div class="description">
+      <p>
+        <a
+          href="https://github.com/jiyuujin/vue-presentation-starter"
+          target="_blank"
+        >
+          jiyuujin/vue-presentation-starter
+        </a>
+      </p>
+      <p>
+        技術スタックはWebpack4 + Vue + Vue-Router + Vuex
+      </p>
+    </div>
+  </v-space>
 </template>
 
 <script>

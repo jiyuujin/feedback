@@ -11,17 +11,14 @@
   </div>
 </template>
 
-<script>
-export default {
-  props: {
-    title: {
-      type: String,
-      default: ''
-    }
-  }
+<script lang="ts">
+import { Component, Prop, Vue } from 'vue-property-decorator';
+
+@Component
+export default class Space extends Vue {
+  @Prop() private title?: string;
 }
 </script>
 
 <style scoped>
-
 </style>

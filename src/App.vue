@@ -1,16 +1,15 @@
 <template>
-  <div class="container">
+  <div
+    id="app"
+    class="container"
+  >
     <transition name="fade">
       <router-view />
     </transition>
   </div>
 </template>
 
-<script>
-export default {}
-</script>
-
-<style scoped>
+<style>
 .container {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

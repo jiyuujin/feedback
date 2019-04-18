@@ -62,3 +62,6 @@ dist
 
 # IntelliJ
 .idea
+
+package-lock.json
+yarn.lock

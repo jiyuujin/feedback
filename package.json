@@ -1,44 +1,25 @@
 {
-  "name": "vue-fes-japan-2018-feedback",
+  "name": "feedback-include-vue-fes-japan-2018",
   "description": "v-kansai Vue.js/Nuxt Meetup #1",
   "scripts": {
-    "dev": "webpack-dev-server --progress --config build/webpack.config.dev.js",
-    "build": "webpack --config build/webpack.config.prod.js",
-    "lint": "eslint --ext .js,.vue src",
-    "lint:fix": "eslint --ext .js,.vue src --fix"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "vue": "^2.5.17",
-    "vue-router": "^3.0.2",
-    "vuex": "^3.0.1"
+    "register-service-worker": "^1.6.2",
+    "vue": "^2.6.10",
+    "vue-class-component": "^6.3.2",
+    "vue-property-decorator": "^7.3.0",
+    "vue-router": "^3.0.6",
+    "vuex": "^3.1.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.1.6",
-    "@babel/preset-env": "^7.1.6",
-    "babel-eslint": "^10.0.1",
-    "babel-loader": "^8.0.4",
-    "css-loader": "^1.0.1",
-    "eslint": "^5.9.0",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-loader": "^2.1.1",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-node": "^8.0.0",
-    "eslint-plugin-promise": "^4.0.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "eslint-plugin-vue": "^4.7.1",
-    "file-loader": "^2.0.0",
-    "html-webpack-plugin": "^3.2.0",
-    "mini-css-extract-plugin": "^0.4.5",
-    "style-loader": "^0.23.1",
-    "uglify-es": "^3.3.9",
-    "url-loader": "^1.1.2",
-    "vue-loader": "^15.4.2",
-    "vue-server-renderer": "^2.5.17",
-    "vue-style-loader": "^4.1.2",
-    "vue-template-compiler": "^2.5.17",
-    "webpack": "^4.26.0",
-    "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.10",
-    "webpack-merge": "^4.1.4"
+    "@vue/cli-plugin-babel": "^3.6.0",
+    "@vue/cli-plugin-pwa": "^3.6.0",
+    "@vue/cli-plugin-typescript": "^3.6.0",
+    "@vue/cli-service": "^3.6.0",
+    "typescript": "^3.4.3",
+    "vue-template-compiler": "^2.6.10"
   }
 }

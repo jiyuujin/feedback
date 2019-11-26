@@ -15,7 +15,7 @@ git init
 git add -A
 git commit -m 'deploy'
 
-# Deploy to https://jiyuujin.github.io/vue-fes-japan-2018-feedback
-git push -f git@github.com:jiyuujin/vue-fes-japan-2018-feedback.git master:gh-pages
+# Deploy to https://jiyuujin.github.io/my-feedback
+git push -f git@github.com:jiyuujin/my-feedback.git master:gh-pages
 
 cd -

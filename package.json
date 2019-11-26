@@ -1,5 +1,5 @@
 {
-  "name": "feedback-include-vue-fes-japan-2018",
+  "name": "my-feedback",
   "description": "v-kansai Vue.js/Nuxt Meetup #1",
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -19,6 +19,7 @@
     "@vue/cli-plugin-pwa": "^3.6.0",
     "@vue/cli-plugin-typescript": "^3.6.0",
     "@vue/cli-service": "^3.6.0",
+    "markdown-to-vue-loader": "^2.0.0",
     "typescript": "^3.4.3",
     "vue-template-compiler": "^2.6.10"
   }

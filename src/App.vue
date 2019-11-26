@@ -1,8 +1,5 @@
 <template>
-  <div
-    id="app"
-    class="container"
-  >
+  <div class="container">
     <transition name="fade">
       <router-view />
     </transition>
@@ -10,8 +7,10 @@
 </template>
 
 <style>
+@import url(https://fonts.googleapis.com/css?family=Comfortaa:400,300,700);
+
 .container {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Comfortaa', sans-serif;
 }
 
 .fade-enter-active, .fade-leave-active {

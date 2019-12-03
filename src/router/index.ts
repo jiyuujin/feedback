@@ -34,7 +34,7 @@ for (let i: number = 0; i < 2; i++) {
   })
 }
 
-const pages = routes.map(page => page.name);
+export const pages = routes.map(page => page.name);
 store.dispatch('onFetch', { pages });
 
 const routerOptions: object = {
@@ -50,15 +50,15 @@ index.beforeEach((to: any, from: any, next: any) => {
   return next();
 });
 
-window.addEventListener('click', e => {
-  // console.log(e.offsetX + '/' + window.screen.width + ' : ', e.offsetY + '/' + window.screen.height)
-
-  if (e.offsetX > (window.screen.width / 2)) {
-    store.dispatch('onNext', { pages });
-  } else {
-    store.dispatch('onLast');
-  }
-});
+// window.addEventListener('click', e => {
+//   // console.log(e.offsetX + '/' + window.screen.width + ' : ', e.offsetY + '/' + window.screen.height)
+//
+//   if (e.offsetX > (window.screen.width / 2)) {
+//     store.dispatch('onNext', { pages });
+//   } else {
+//     store.dispatch('onLast');
+//   }
+// });
 
 window.addEventListener('keydown', e => {
   const { which } = e;

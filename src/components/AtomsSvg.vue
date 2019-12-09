@@ -6,18 +6,24 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import { createComponent, SetupContext } from '@vue/composition-api'
 
-export default Vue.extend({
+type SvgProps = {
+    name: string
+}
+
+export default createComponent({
     props: {
         name: {
             type: String,
             required: true
         }
     },
-    computed: {
-        svg() {
-            return () => import(`@/assets/img/${this.name}.svg`)
+    setup(props: SvgProps, ctx: SetupContext) {
+        const svg = () => import(`@/assets/img/${props.name}.svg`)
+
+        return {
+            svg
         }
     }
 })

@@ -15,44 +15,28 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import { createComponent, SetupContext } from '@vue/composition-api'
 import routes from '@/router'
 
 const AtomsSvg = () => import('@/components/AtomsSvg.vue')
 
-export default Vue.extend({
+export default createComponent({
     components: {
         AtomsSvg
     },
-    methods: {
-        prev() {
-            this.$store.dispatch('onLast')
-        },
-        next() {
-            this.$store.dispatch('onNext', { routes })
+    setup(props: {}, ctx: SetupContext) {
+        const prev = () => {
+            ctx.root.$store.dispatch('onLast')
+        }
+
+        const next = () => {
+            ctx.root.$store.dispatch('onNext', { routes })
+        }
+
+        return {
+            prev,
+            next
         }
     }
 })
 </script>
-
-<style>
-@import url(https://fonts.googleapis.com/css?family=Comfortaa:400,300,700);
-
-.container {
-  font-family: 'Comfortaa', sans-serif;
-}
-
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s
-}
-
-.fade-enter, .fade-leave-to {
-  opacity: 0
-}
-
-.operation {
-  position: absolute;
-  bottom: 4%;
-  right: 4%;
-}
-</style>

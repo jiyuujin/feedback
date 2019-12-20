@@ -19,18 +19,24 @@ const baseUrl: string = process.env.BASE_URL;
 
 // Routes
 let routes: Array<Route> = []
+routes.push({
+  path: '/',
+  name: 'Slide_Top',
+  // @ts-ignore
+  component: () => import('../../content/README.md')
+})
+for (let i: number = 0; i < 25; i++) {
+  routes.push({
+    path: i !== 0 ? `/2019/${i}` : '/2019/',
+    name: `Slide2019_${i}`,
+    component: () => import(`../../content/2019/${i}.md`)
+  })
+}
 for (let i: number = 0; i < 18; i++) {
   routes.push({
     path: i !== 0 ? `/2018/${i}` : '/2018/',
     name: `Slide2018_${i}`,
     component: () => import(`../../content/2018/${i}.md`)
-  })
-}
-for (let i: number = 0; i < 2; i++) {
-  routes.push({
-    path: i !== 0 ? `/2019/${i}` : '/2019/',
-    name: `Slide2019_${i}`,
-    component: () => import(`../../content/2019/${i}.md`)
   })
 }
 

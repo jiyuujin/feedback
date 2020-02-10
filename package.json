@@ -21,7 +21,7 @@
     "babel-preset-vca-jsx": "0.3.4",
     "markdown-to-vue-loader": "2.0.0",
     "typescript": "3.7.5",
-    "vue-svg-loader": "0.15.0",
+    "vue-svg-loader": "0.16.0",
     "vue-template-compiler": "2.6.11"
   }
 }

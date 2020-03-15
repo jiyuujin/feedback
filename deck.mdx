@@ -1,7 +1,5 @@
 import { Head, Notes, Image } from 'mdx-deck'
-import { theme } from './theme'
-
-export const themes = [ theme ]
+import { CodeSurfer } from 'mdx-deck-code-surfer'
 
 <Head>
   <title>2019年 私の振り返り</title>
@@ -53,12 +51,7 @@ v-kansai #12
 
 - フロントエンドを主戦場としてTSを注入、リプレースを大胆に断行
    - 以下2本柱として、時にAWSも触りながら
-- Vue CLIを使ったMPA開発
-   - ルーティングをCakePHP側で持たせたかったので
-- Reactを使ったServerless/SSR開発
-   - 個々人の経歴や求人などをAppSyncで
-- アトミックコンポーネントのパッケージ開発
-   - 複数プロダクトを共同で使うために必要だった
+   - Vue CLIを使ったMPA開発、Reactを使ったServerless/SSR開発
 
 ---
 
@@ -72,11 +65,7 @@ v-kansai #12
 
 ---
 
-# コード以外の比重が大きい
-
-## 自分のアサイン前は静的コーディングで頑張っていたらしいが、
-
-## ゼロベースで今となっては当たり前のことを粛々と
+# コード以外の比重が大きかった
 
 - Lint共通パッケージ化
 - Atoms共通パッケージ化
@@ -117,15 +106,22 @@ v-kansai #12
 
 2. Vue Component側でそのDOMにアクセス
 
-<Image
-  src='./content/img/mpa-json.png'
-  style={{
-    width: '20vw',
-    height: '20vh',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center'
-  }}/>
+---
+
+```js
+return new Promise((resolve, reject) => {
+    setTimeout(() => {
+        reject('id="json-ui-data"のjsonのelementが取得できませんでした')
+    }, 3000)
+    const intVal = setInterval(() => {
+        const jsonElement = document.getElementById('json-ui-data')
+        if (jsonElement) {
+            clearInterval(intVal)
+            resolve(JSON.parse(jsonElement.textContent))
+        }
+    }, 100)
+})
+```
 
 ---
 
@@ -212,6 +208,8 @@ v-kansai #12
 
 # その他
 
+---
+
 ## カンファレンス 4件 (1件)
 
 1. Laravel JP Conference
@@ -219,6 +217,8 @@ v-kansai #12
 3. フロントエンドカンファレンス関西
 4. フロントエンドカンファレンス福岡
 5. JS Conf JP
+
+---
 
 ## コミュニティ 1年間
 

@@ -7,6 +7,6 @@
     "help": "mdx-deck"
   },
   "devDependencies": {
-    "mdx-deck": "1.10.2"
+    "mdx-deck": "4.1.1"
   }
 }
